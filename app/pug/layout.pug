@@ -1,0 +1,148 @@
+doctype html
+
+html(lang='en')
+
+	head
+
+		meta(charset='UTF-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0')
+		link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+		link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap' rel='stylesheet')
+		title='Madagascar trsm'
+		meta(name='description', content='Madagascar trsm')
+		link(rel='icon', type='image/png', href='images/favicon.png')
+		link(rel='stylesheet', href='./styles/app.css')
+
+	body
+
+		header.header
+			a.header__mobile-menu-open-btn.js-menu-open-icon(href="javascript:void(0)")
+				span.sr-only open
+				i.fa.fa-bars
+			a.header__logo(href="/")
+				img(src="images/logo.png" width="150" height="30" alt="image")
+			a.header__mobile-menu-close-btn.js-menu-close-icon.sr-only(href="javascript:void(0)")
+				span.sr-only close
+				i.fa.fa-times
+			nav.header__nav
+				ul
+					li
+						a(href="#about") About us
+					li
+						a(href="#values") Our values
+					li
+						a(href="#projects") Projects
+					li
+						a(href="#teams") Our teams
+					li
+						a(href="#contact") Contact
+		.headerMobile.js-mobile-menu
+			ul
+				li
+					a.js-mobile-menu-item(href="#about") About us
+				li
+					a.js-mobile-menu-item(href="#values") Our values
+				li
+					a.js-mobile-menu-item(href="#projects") Projects
+				li
+					a.js-mobile-menu-item(href="#teams") Our teams
+				li
+					a.js-mobile-menu-item(href="#contact") Contact
+
+		block content
+
+		.section#contact
+			h2.section__title Contact Us
+			h3.section__subtitle Completely productize dynamic outsourcing vis-a-vis high standards in web.
+			.sContact.section__content
+				a.sContact__map(href="https://www.google.com/maps/dir//Perdrix+Ave,+Quatre+Bornes,+Maurice/@-20.2735117,57.4756285,16z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x217c5b5b55dbb4c9:0x38a0aabcc2865289!2m2!1d57.4800059!2d-20.2735218!3e3" target="_blank" rel="noopener noreferrer")
+					span.sr-only map
+					img(src="images/map.png" width="500" height="500" alt="image")
+				.sContact__content
+					.sContact__text
+						.sContact__item
+							span Address:
+							p 7A Perdrix Ave, Quatre Bornes, Sodnac, Mauritius
+						.sContact__item
+							span Phone: 
+							p + 230 57 18 78 86
+						.sContact__item
+							span E-mail:
+							p contact@zakaranda@gmail.com
+					ul.sContact__icons
+						//- li
+						//- 	a(href="https:/facebook.com" target="_blank" rel="noopener noreferrer")
+						//- 		span.sr-only icon
+						//- 		i.fa.fa-facebook-square
+						li
+							a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+								span.sr-only icon
+								i.fa.fa-linkedin-square
+						//- li
+						//- 	a(href="https:/viadeo.com" target="_blank" rel="noopener noreferrer")
+						//- 		span.sr-only icon
+						//- 		i.fa.fa-viadeo-square
+						//- li
+						//- 	a(href="https:/twitter.com" target="_blank" rel="noopener noreferrer")
+						//- 		span.sr-only icon
+						//- 		i.fa.fa-twitter-square
+
+		footer.footer
+			//- .footer__item
+			//- 	h3 Conveniently exploit an expanded array.
+			//- 	p Efficiently plagiarize tactical infomediaries before competitive networks. Completely envisioneer leveraged technology through synergistic partnerships. Monotonectally syndicate performance.
+			
+			.footer__item
+				.contact
+					.contact__item
+						span Address:
+						p 7A Perdrix Ave, Quatre Bornes, Sodnac, Mauritius
+					.contact__item
+						span Phone: 
+						p +230 57187886
+					.contact__item
+						span E-mail:
+						p contact@zakaranda@gmail.com
+
+			.footer__item
+				ul.footer__nav
+					li
+						a(href="#about") About us
+					li
+						a(href="#projects") Projects
+					li
+						a(href="#teams") Our teams
+
+			.footer__item
+				ul.footer__icons
+					//- li
+					//- 	a(href="https:/facebook.com" target="_blank" rel="noopener noreferrer")
+					//- 		span.sr-only icon
+					//- 		i.fa.fa-facebook-square
+					li
+						a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+							span.sr-only icon
+							i.fa.fa-linkedin-square
+					//- li
+					//- 	a(href="https:/viadeo.com" target="_blank" rel="noopener noreferrer")
+					//- 		span.sr-only icon
+					//- 		i.fa.fa-viadeo-square
+					//- li
+					//- 	a(href="https:/twitter.com" target="_blank" rel="noopener noreferrer")
+					//- 		span.sr-only icon
+					//- 		i.fa.fa-twitter-square
+
+			.footer__text
+				p &copy; 2020, Madagascar trsm
+
+		script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js')
+
+		script.
+			WebFont.load({
+				google: {
+					families: ['Open Sans:300,400']
+				}
+			});
+
+		script(src='./scripts/app.js', async)

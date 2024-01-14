@@ -1,0 +1,355 @@
+extends ../layout
+
+block content
+
+	.banner
+		.banner__overlay
+		.banner__image
+			picture
+				source(media="(max-width: 768px)" srcset="images/banner/banner-768.jpg")
+				source(media="(max-width: 480px)" srcset="images/banner/banner-480.jpg")
+				img(src="images/banner/banner-1920.jpg" alt="banner image")
+		.banner__text
+			p Invest in our Property Development Fund.
+			.js-open-popin-item
+				a.btn(href="#") Find how
+				.js-popin-details.sr-only
+					.popinContact
+						h4 If you are an investor interested in investing in our fund and need more information, contact us below:
+						form(action='#', method='POST')
+							.popinContact__input
+								label(for='name') Name
+								input#name(name='name', type='text', placeholder='Your name', required='')
+							.popinContact__input
+								label(for='mail') Mail
+								input#mail(name='mail', type='email', placeholder='Your email address', required='')
+							.popinContact__input
+								label(for='subject') Subject
+								input#subject(name='subject', type='text', placeholder='The subject of your message', required='')
+							.popinContact__input
+								label(for='message') Message
+								textarea#message(name='content', placeholder='Your message here ...', required='')
+							.popinContact__btn
+								button.btn(type='submit') Send
+
+	.section.first
+		.section__content
+			h2.topTitle Type of Investment Fund
+			p Madagascar trsm (BPPDF) will be a protected cell fund company investing in property development projects on the beautiful island of Mauritius that will be a registered investment vehicle in Seychelles regulated by the FSA.
+			a.btn(href="/type-of-investment-fund") Learn more
+
+	.section.section--dark
+		.bannerInfo.section__content
+			.bannerInfo__item
+				i.fa.fa-thumbs-up
+				p.bannerInfo__status 0%
+				p.bannerInfo__desc Tax on Income
+			.bannerInfo__item
+				i.fa.fa-thumbs-up
+				p.bannerInfo__status Minimum 5% ROI
+				p.bannerInfo__desc ROI
+			.bannerInfo__item
+				i.fa.fa-thumbs-up
+				p.bannerInfo__status No
+				p.bannerInfo__desc Exchange Controls
+			.bannerInfo__item
+				i.fa.fa-thumbs-up
+				p.bannerInfo__status No
+				p.bannerInfo__desc Capital Gains Tax
+
+	//- .section
+	//- 	.section__content
+	//- 		h2 Protected Cell Company (PCC)
+	//- 		p The PCC structure ensures that assets are segregated into different cells within that company, with a view to protect each cell from any extension of liabilities from one cell to the other. The structure is easy to manage with one board for the whole structure and advisory committee to each cell. It is also a cost efficient structure with one administrator, one audit firm and one company secretary.
+	//- 		a.btn(href="/protected-cell-company") Learn more
+	
+	.section#values
+		.section__content
+			h2.section__title Our Mission Statement
+			h3.section__subtitle You are not just investing for a return, you are investing in our trust, passion and commitment to deliver. It is our investment in the right team of people and projects that guarantee success. Come and be part of our family and grow with us.
+			.textBox.section__content
+				.textBox__item
+					.item__header
+						h4 Transparency
+					.item__text
+						p Integrity and honesty is one of our main core values. Our aim is to deliver what we say we will do.
+				.textBox__item
+					.item__header
+						h4 Conflict free
+					.item__text
+						p The needs of our investors come first. We are beholden to no, individual, institution or entity other than our investors.
+				.textBox__item
+					.item__header
+						h4 Expertise
+					.item__text
+						p We demand excellence, our Executive Board are engulfed with knowledge and experience and we continuously invest in the development of skills and education for our staff.
+				.textBox__item
+					.item__header
+						h4 Innovation
+					.item__text
+						p We continuously invest in technology ensuring that our solutions are cutting-edge.
+				.textBox__item
+					.item__header
+						h4 Accountability
+					.item__text
+						p We strive to honour commitments that we make and take responsibility to deliver with the highest quality possible.
+					
+
+	.section
+		.details.section__content
+			.details__item
+				.details__image
+					img.thumbnail(src="images/about/seychelles.jpg" width="500" height="300"  alt="image")
+				.details__text
+					h2 About Seychelles
+					h3 Fiscal Environment
+					ul
+						li International Business Companies (IBCs) set-up on the island of Seychelles are exempt from corporation tax.
+						li No capital gains tax, no withholding tax and no exchange controls.
+
+					h3 Why Seychelles?
+					ul
+						li  A stable political nation and is amongst the fastest growing jurisdictons.
+						li  A growing list of double taxation treaties with countries including Mauritius, China, Indonesia, Belgium, Cyprus, South Africa, UAE etc.
+			.details__item.details__item--reverse
+				.details__image
+					img.thumbnail(src="images/about/mauritius.jpg" width="500" height="300"  alt="image")
+				.details__text
+					h2 About Mauritius
+					h3 Why invest in Mauritius
+					p Mauritius is fast becoming an investmentdestination of choice for foreign investors who are attracted by a business-friendly environment, favourable tax rates, strong capital growth achieved through property investments.
+			.details__item
+				.details__image
+					img.thumbnail(src="images/about/mauritius-2.jpg" width="500" height="300"  alt="image")
+				.details__text
+					h3 Reasons to invest in Mauritius.
+					ul
+						li Attractive ROI and Tax benefits.
+						li Strong high-net-worth individuals (HNWI growth) – due to an increase of wealthy individuals moving to Mauritius over the last decade.
+						li Secure ownership rights - Mauritian ownership rights are very strong, which encourages locals and foreigners to invest in property and businesses in the country.
+						li Low level of government regulation &amp; intervention.
+						li Automatic permanent residency - this applies if one buys a US $500,000 home in the country. It then encourages wealthy people to move there and grows the HNWI further.
+						li Strong foreign direct investment (FDI} inflows.
+						li Safety &amp; security - Mauritius was recently rated by New World Wealth as the safest country in Africa along with Namibia and Botswana.
+						li Excellent education and healthcare system.
+						li A retirement paradise.
+	.section#projects
+		h2.section__title Projects Requiring Investment
+		//- h3.section__subtitle Completely productize dynamic outsourcing vis-a-vis high standards in web.
+		.project.section__content
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-1.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Beach House
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-1.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Beach House
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-9.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Grand Bay Villas
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-9.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Grand Bay Villas
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-3.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Luxury Villa
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-3.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Luxury Villa
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-4.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 New Ebène
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-4.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 New Ebène
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-5.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Cambuse Beach &amp; Spa
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-5.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Cambuse Beach &amp; Spa
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-6.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 DODO CASINO
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-6.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 DODO CASINO
+							p Madagascar trsm aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund.
+							p For information on this project, contact us at 
+								strong contact@zakaranda@gmail.com
+		.section__action
+			a.btn(href='/projects') Load more
+		
+	.section#teams
+		h2.section__title Executive Board
+		//- h3.section__subtitle Completely productize dynamic outsourcing vis-a-vis high standards in web.
+		.teams.section__content
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-1.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Fund Manager
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-2.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Administrators
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-3.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Auditors
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-1.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Fund Manager
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-1.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Fund Manager
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+			.teams__item
+				.teams__image
+					img(src="images/teams/p-1.jpg" width="150" height="150" alt="image")
+				p.teams__name Darren Cootapen
+				p.teams__title Fund Manager
+				p.teams__text Proactively unleash stand-alone "outside the box" thinking vis-a-vis interoperable synergy.
+				p.teams__links
+					a(href="https://facebook.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-facebook-square
+					a(href="https://linkedin.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-linkedin-square
+					a(href="https://viadeo.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-viadeo-square
+					a(href="https://twitter.com" target="_blank" rel="noopener noreferrer")
+						span.sr-only icon
+						i.fa.fa-twitter-square
+	.section.first#about
+		h2.section__title About us
+		.section__content
+			p.left 
+				strong Madagascar trsm 
+				| aims to generate real value for our investors by creating synergy between onsite/offsite aspects of property development with our Property Development Protected Cell Fund, by ensuring the following:
+			ul
+				li The purchase of land for development of environmental friendly Green projects and to ensure that the correct land and size for projects are acquired.
+				li The selection of the right contractors for all our projects through legal tenders, due diligence and by the approval of the Board.
+				li Professional property architectural designs in order to maximize its functionality for its users and have architectural appeal, so that we avoid any diminishing value associated with a poorly designed project.
+				li To maximize productivity through our professional management team and invest in the development of all of our employees.
+				li To ensure that there is a balance between risk and return through financial structuring and what lenders and our investors will allow.
+				li Intellectual property rights are used correctly to enhance value through designs and branding.
+				li To conduct investment analysis and due diligence on any investable projects proposed to us by property developers.
+
+
+			

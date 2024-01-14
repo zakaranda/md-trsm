@@ -1,0 +1,97 @@
+extends ../layout
+
+block content
+
+	.banner
+		.banner__overlay
+		.banner__image
+			picture
+				source(media="(max-width: 768px)" srcset="images/banner/banner-768.jpg")
+				source(media="(max-width: 480px)" srcset="images/banner/banner-480.jpg")
+				img(src="images/banner/banner-1920.jpg" alt="banner image")
+		.banner__text
+			p Invest in our Property Development Fund.
+			.js-open-popin-item
+				a.btn(href="#") Find how
+				.js-popin-details.sr-only
+					.popinContact
+						h4 If you are an investor interested in investing in our fund and need more information, contact us below:
+						form(action='#', method='POST')
+							.popinContact__input
+								label(for='name') Name
+								input#name(name='name', type='text', placeholder='Your name', required='')
+							.popinContact__input
+								label(for='mail') Mail
+								input#mail(name='mail', type='email', placeholder='Your email address', required='')
+							.popinContact__input
+								label(for='subject') Subject
+								input#subject(name='subject', type='text', placeholder='The subject of your message', required='')
+							.popinContact__input
+								label(for='message') Message
+								textarea#message(name='content', placeholder='Your message here ...', required='')
+							.popinContact__btn
+								button.btn(type='submit') Send
+
+	.section.first.article
+		.section__content
+			h2.section__title Type of Investment Fund
+			h4 Blue Penny Property Development Fund (BPPDF) Structure:
+			p BPPDF will operate as a mutual fund and therefore the Protected Cell Company (PCC) shall be set up under Companies Act 1972.
+			h4 Protected Cell Company (PCC):
+			p 
+				|Assets are segregated into different cells within that company under a PCC structure. Each cell is protected from any extension of liabilities from one cell to the other. The structure consists of 
+				strong one board 
+				|who will oversee the entire structure and an 
+				strong advisory committee 
+				|to each cell. It is also a cost efficient structure with 
+				strong one administrator
+				|, 
+				strong one audit firm 
+				|and 
+				strong one company secretary. 
+				|Each cell will be responsible for specific projects related to property development as demonstrated by the diagram below:
+	.treeDiag
+		.wrapper
+			ul
+				li.noline
+					label(for='item1') Foreign Investor
+					input#item1(type='checkbox')
+					ul
+						li
+							label(for='item1') Seychelles PCC/Fund Core Cell
+							input#item1(type='checkbox')
+							ul
+								span.more &mldr;
+								li
+									label(for='item1.1') Cell A
+									input(id='item1.1' type='checkbox')
+									ul
+										span.more &mldr;
+										li
+											label.noborder(for='item1.1.1') 
+												.treeBox
+													h3 Investment in Residential Development in Mauritius
+											input(id='item1.1.1' type='checkbox')
+											
+											
+								li
+									label(for='item1.2') Cell B
+									input(id='item1.2' type='checkbox')
+									ul
+										span.more &mldr;
+										li
+											label.noborder(for='item1.2.1') 
+												.treeBox
+													h3 Investment in Hotels Development in Mauritius
+											input(id='item1.2.1' type='checkbox')
+											
+								li
+									label(for='item1.3') Cell C
+									input(id='item1.3' type='checkbox')
+									ul
+										span.more &mldr;
+										li
+											label.noborder(for='item1.3.1') 
+												.treeBox
+													h3 Acquisition of  Land in Mauritius
+											input(id='item1.3.1' type='checkbox')

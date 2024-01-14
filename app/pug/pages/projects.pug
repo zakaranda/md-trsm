@@ -1,0 +1,104 @@
+extends ../layout
+
+block content
+
+	.banner
+		.banner__overlay
+		.banner__image
+			picture
+				source(media="(max-width: 768px)" srcset="images/banner/banner-768.jpg")
+				source(media="(max-width: 480px)" srcset="images/banner/banner-480.jpg")
+				img(src="images/banner/banner-1920.jpg" alt="banner image")
+		.banner__text
+			p Invest in our Property Development Fund.
+			.js-open-popin-item
+				a.btn(href="#") Find how
+				.js-popin-details.sr-only
+					.popinContact
+						h4 If you are an investor interested in investing in our fund and need more information, contact us below:
+						form(action='#', method='POST')
+							.popinContact__input
+								label(for='name') Name
+								input#name(name='name', type='text', placeholder='Your name', required='')
+							.popinContact__input
+								label(for='mail') Mail
+								input#mail(name='mail', type='email', placeholder='Your email address', required='')
+							.popinContact__input
+								label(for='subject') Subject
+								input#subject(name='subject', type='text', placeholder='The subject of your message', required='')
+							.popinContact__input
+								label(for='message') Message
+								textarea#message(name='content', placeholder='Your message here ...', required='')
+							.popinContact__btn
+								button.btn(type='submit') Send
+
+	.section#projects
+		h2.section__title Projects Requiring Investment
+		h3.section__subtitle Completely productize dynamic outsourcing vis-a-vis high standards in web.
+		.project.section__content
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-1.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Beach House
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-1.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Beach House
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-2.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Blue Bay Luxury Hotel
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-2.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Blue Bay Luxury Hotel
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-3.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Luxury Villa
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-3.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Luxury Villa
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-4.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 New Ebène
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-4.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 New Ebène
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-5.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 Cambuse Beach &amp; Spa
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-5.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 Cambuse Beach &amp; Spa
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
+			.project__item.js-open-popin-item
+				.project__image
+					img(src="images/project/p-6.jpg" width="300" height="300"  alt="image")
+				.project__text
+					h3 DODO CASINO
+				.project__details.js-popin-details.sr-only
+					.projects
+						img(src="images/project/p-6.jpg" width="300" height="300"  alt="image")
+						.projects__text
+							h3 DODO CASINO
+							p Compellingly evolve client-centric action items rather than emerging deliverables. Compellingly negotiate transparent paradigms through worldwide collaboration and idea-sharing. Rapidiously strategize compelling solutions via tactical vortals. Efficiently.
